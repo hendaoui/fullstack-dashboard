@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #F9FAFB;
+}
+
+.active-navlink svg {
+    color: #eeeeee;
+    fill: #eeeeee;
+}
+
+.active-navlink span {
+    color: #eeeeee;
+}
+
+.active-navlink a {
+    --tw-bg-opacity: 1;
+    background-color: rgb(84 110 122 / var(--tw-bg-opacity, 1));
+}
+
+.Toastify {
+    z-index: 999999 !important;
+    position: sticky;
+}

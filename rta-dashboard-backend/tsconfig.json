@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types" // This is correct if you have custom types under src/types
+    ],
+    "baseUrl": "./src", // This is correct, it makes 'src' the root of module resolution
+    "target": "es2016", // Correct target version
+    "module": "commonjs", // Specifies module system for Node.js
+    "esModuleInterop": true, // Enables compatibility for importing CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensures consistent case for file imports
+
+    /* Type Checking */
+    "strict": true, // Enabling all strict type-checking options
+    "skipLibCheck": true // Skips type checking for third-party libraries
+  },
+  "include": [
+    "src/**/*", // Includes all TypeScript files in src
+    "src/types/express/index.d.ts" // Ensures the custom type declaration for express is included
+  ]
+}
